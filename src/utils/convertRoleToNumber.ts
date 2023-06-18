@@ -1,4 +1,4 @@
-import { UserRole } from 'src/users/enums/UserRole.enum'
+import { UserRole } from 'src/users/enums/userRole.enum'
 
 export const convertRole = (userRole: UserRole) => {
 	return userRole === UserRole.OWNER

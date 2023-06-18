@@ -2,7 +2,7 @@ import { applyDecorators, SetMetadata, UseGuards } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
 import { CheckAuthGuard } from 'src/guards/CheckAuth.guard'
 import { CheckRoleGuard } from 'src/guards/CheckRole.guard'
-import { UserRole } from 'src/users/enums/UserRole.enum'
+import { UserRole } from 'src/users/enums/userRole.enum'
 import { convertRole } from 'src/utils/convertRoleToNumber'
 
 export const Auth = (role: UserRole = UserRole.USER) => {

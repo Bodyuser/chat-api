@@ -7,7 +7,7 @@ import {
 	ManyToMany,
 	JoinTable,
 } from 'typeorm'
-import { UserRole } from '../enums/UserRole.enum'
+import { UserRole } from '../enums/userRole.enum'
 import { MessageEntity } from 'src/message/entities/message.entity'
 import { DialogEntity } from 'src/dialogs/entities/dialog.entity'
 
