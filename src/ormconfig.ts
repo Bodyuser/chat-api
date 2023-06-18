@@ -7,16 +7,14 @@ export const dataSourceOptions: DataSourceOptions = {
 	port: 5432,
 	type: 'postgres',
 	url: 'postgres://koejsyje:Dxz6-3WW5AkOy_vfFCSA7ZctPY11sUyq@snuffleupagus.db.elephantsql.com/koejsyje',
-	logging: true,
-	synchronize: false,
+	logging: false,
+	synchronize: true,
 	entities: ['dist/**/*.entity.js'],
-
+	migrations: ['dist/migrations/*.js'],
 	// host: 'snuffleupagus.db.elephantsql.com',
 	// username: 'koejsyje',
 	// password: 'Dxz6-3WW5AkOy_vfFCSA7ZctPY11sUyq',
 	// database: 'koejsyje',
-
-	// migrations: ['dist/migrations/*.js'],
 }
 
 const dataSource = new DataSource(dataSourceOptions)
